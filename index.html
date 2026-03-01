@@ -1,67 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-VR714PFK6E"></script>
- <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VR714PFK6E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VR714PFK6E');
+  </script>
 
-  gtag('config', 'G-VR714PFK6E');
- </script>
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Help Me Move - Affordable Moving Help Zurich & Surroundings</title>
+  <title>Moving Company Zurich | Affordable Moving Help Zurich | Help Me Move</title>
 
-  <!-- SEO Metadata Module -->
-  <meta name="description" content="Affordable and flexible moving company to help expats, students, and locals in Zurich, Aargau, and the surrounding area. SUV transport, boxes, pets, and furniture – fast, simple, and pet-friendly moving service." />
-  <meta name="keywords" content="moving company Zurich, Kanton Zürich, Zuerich moving service, affordable transportation Zurich, moving help Aargau, SUV transport, pet-friendly move, dog transport, cat safe, boxes, furniture help, greater Zurich area, student move, cheap moving Zurich" />
+  <!-- SEO Meta -->
+  <meta name="description" content="Looking for a moving company in Zurich? Get affordable, personal moving help — no agency overhead. SUV transport for expats, students &amp; pet owners. Bed moving, sofa transport, vet trips. 100 CHF/hr, no hidden fees." />
   <meta name="author" content="Help Me Move" />
   <meta name="robots" content="index, follow" />
+
+  <!-- Canonical & hreflang -->
   <link rel="canonical" href="https://www.helpmemove.ch/" />
-  <link rel="alternate" hreflang="en" href="https://www.helpmemove.ch/" />
-  <link rel="alternate" hreflang="de" href="https://www.helpmemove.ch/de.html" />
+  <link rel="alternate" hreflang="en-CH" href="https://www.helpmemove.ch/" />
+  <link rel="alternate" hreflang="de-CH" href="https://www.helpmemove.ch/de.html" />
   <link rel="alternate" hreflang="x-default" href="https://www.helpmemove.ch/" />
   <link rel="icon" href="suv-icon.png" type="image/png" />
 
-  <!-- Google Bussiness Module -->
+  <!-- Open Graph -->
+  <meta property="og:title" content="Help Me Move - Expat-Friendly Moving Help in Zurich &amp; Aargau" />
+  <meta property="og:description" content="Affordable personal moving help in Zurich &amp; Aargau. No agency overhead — you deal directly with me. 100 CHF/hr, pet-friendly, no hidden fees." />
+  <meta property="og:image" content="https://www.helpmemove.ch/SUV_ext.webp" />
+  <meta property="og:url" content="https://www.helpmemove.ch/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CH" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Help Me Move - Moving Help in Zurich &amp; Aargau" />
+  <meta name="twitter:description" content="Personal, affordable moving help in Zurich. 100 CHF/hr. Pet-friendly. No hidden fees." />
+  <meta name="twitter:image" content="https://www.helpmemove.ch/SUV_ext.webp" />
+
+  <!-- MovingCompany Schema -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Help Me Move - Personal Moving & Furniture Transport",
-  "image": "https://helpmemove.ch/SUV_ext.webp",
-  "url": "https://www.helpmemove.ch/",
-  "telephone": "+41782421211",
-  "priceRange": "CHF",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Zurich",
-    "addressRegion": "ZH",
-    "addressCountry": "CH"
-  },
-  "geo": {
-    "@type": "GeoCircle",
-    "itemOffered": { "@type": "Service", "name": "Moving Help" },
-    "geoMidpoint": { "@type": "GeoCoordinates", "latitude": 47.3769, "longitude": 8.5417 },
-    "geoRadius": "40000"
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "@id": "https://www.helpmemove.ch/#organization",
+    "name": "Help Me Move - Personal Moving & Furniture Transport",
+    "url": "https://www.helpmemove.ch/",
+    "telephone": "+41782421211",
+    "email": "helpmemovech@gmail.com",
+    "priceRange": "100 CHF/hour",
+    "image": "https://www.helpmemove.ch/SUV_ext.webp",
+    "description": "Personal, affordable moving and transport service in Zurich and Aargau. An alternative to big moving companies — no agency overhead, you deal directly with the driver. 100 CHF per hour, pet-friendly, no hidden fees.",
+    "sameAs": [
+      "https://share.google/HwJ97dqG2Jmu7bA5g"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Zurich",
+      "addressRegion": "ZH",
+      "addressCountry": "CH"
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 47.321276,
+        "longitude": 8.5285466
+      },
+      "geoRadius": "40000"
+    },
+    "availableLanguage": ["English", "German"],
+    "openingHours": ["Mo-Fr 17:00-22:00", "Sa-Su 09:00-20:00"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Moving Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Bed and Mattress Moving Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sofa and Couch Transport Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Expat Moving Help Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pet-Friendly Transportation Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pet Transport to Vet Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Personal Transport Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Furniture and Box Transport Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "IKEA Pickup and Delivery Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ricardo and Marketplace Item Collection Zurich"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Student Relocation Zurich and Aargau"}, "price": "100", "priceCurrency": "CHF", "unitCode": "HUR"}
+      ]
+    }
   }
-}
-</script>
+  </script>
 
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a moving company cost in Zurich?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Big moving companies in Zurich typically charge 150-300 CHF per hour with minimums of 3-4 hours. Help Me Move charges a flat 100 CHF per hour with no minimum and no hidden fees for stairs, fuel, or parking."}
+      },
+      {
+        "@type": "Question",
+        "name": "What areas does your moving service cover?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Zurich city, the greater Zurich area (Kanton Zurich), and Aargau including Aarau — roughly a 40 km radius. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and Wadenswil. Moves to other cantons may be possible depending on the situation."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can you move a sofa or a bed?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high. Fits most sofas, beds, wardrobes, and large boxes. Many mattresses can be folded in half to save space. Disassembling bed frames beforehand (legs off, slats bundled) helps everything fit more efficiently."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is this moving service pet-friendly?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. Dogs and cats are welcome to travel in the vehicle during the move at no extra cost."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you help with pet transport to the vet?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — if you need a calm, pet-friendly ride to a veterinary clinic in Zurich or Aargau, I can help with that too. Your pet travels safely and comfortably, without the stress of public transport."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you help with IKEA pickups, Ricardo, or Facebook Marketplace collections?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. I regularly help with IKEA pickups as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms across Zurich and Aargau."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you help with loading and unloading?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, I assist with loading and unloading. For heavier items, having an extra pair of hands on your side is always a good idea. No extra charge for stairs or elevators."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can you move between cantons, for example from Zurich to another region?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Possibly — it depends on distance, timing, and availability. Get in touch and we can discuss what works."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you speak English?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, fully fluent in English. As an expat myself, I understand the challenges of settling in Switzerland and offer a relaxed, English-speaking service."}
+      },
+      {
+        "@type": "Question",
+        "name": "When are you available?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Weekdays from 17:00, and occasionally on certain weekends. Contact me to check availability for your date."}
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance do I need to book?",
+        "acceptedAnswer": {"@type": "Answer", "text": "As early as possible is always better, but last-minute requests are welcome too. Just WhatsApp, email, or give me a call."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can I ride along during the move?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes, you are welcome to ride along. It's your move — I'm just here to make it easier."}
+      }
+    ]
+  }
+  </script>
 
-  <!-- Open Graph Metadata Module -->
-  <meta property="og:title" content="Help Me Move - Expat-Friendly Moving Help in Zurich & Aargau" />
-  <meta property="og:description" content="Reliable and affordable moving help for expats and pet owners in Zurich and surrounding cantons. SUV-based transport for boxes, pets, and furniture." />
-  <meta property="og:image" content="https://helpmemove.ch/SUV_ext.webp" />
-  <meta property="og:url" content="https://helpmemove.ch/index.html" />
+  <!-- WebSite Schema -->
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "WebSite", "name": "Help Me Move CH", "url": "https://www.helpmemove.ch/"}
+  </script>
 
-
-  <!-- Styles Module -->
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; line-height: 1.7; color: #333; }
+
+    /* Header */
     header {
       background: url('zrh.jpg') no-repeat center center;
       background-size: cover;
@@ -71,170 +181,304 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
       position: relative;
     }
-    .container { max-width: 900px; margin: auto; padding: 20px; background: white; }
-    .images { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0; }
-    .images img { width: 100%; max-width: 400px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    footer { text-align: center; padding: 20px; background: #eee; font-size: 1.1em; }
-    h1, p { margin: 10px 0; }
+    header h1 { font-size: 2rem; margin: 0 0 10px; }
+    header p  { font-size: 1.15rem; margin: 0; }
 
-    /* Language Switcher Module */
-    .lang-switcher {
-      position: absolute; top: 20px; right: 20px;
-    }
-    .lang-switcher a, .lang-switcher span {
+    /* Language switcher */
+    .lang-switcher { position: absolute; top: 20px; right: 20px; }
+    .lang-switcher a,
+    .lang-switcher span {
       background: #003366;
       color: white;
       padding: 6px 10px;
       border-radius: 5px;
-      margin-right: 8px;
+      margin-left: 6px;
       text-decoration: none;
       font-weight: bold;
-      cursor: pointer;
-      user-select: none;
-      transition: background-color 0.3s ease;
+      font-size: 0.9rem;
+      display: inline-block;
+      transition: background 0.2s;
     }
-    .lang-switcher a:hover {
-      background: #0055a5;
-    }
+    .lang-switcher a:hover { background: #0055a5; }
     .lang-switcher .active {
       background: #ffffff;
       color: #003366;
-      cursor: default;
       box-shadow: 0 0 5px #003366;
+      cursor: default;
     }
 
-    /* Contact Link Styling Module */
-    .contact-link {
-      color: inherit;
-      text-decoration: none;
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    h2 { color: #003366; border-bottom: 2px solid #eee; padding-bottom: 8px; margin-top: 40px; }
+    h2:first-child { margin-top: 0; }
+
+    /* Images */
+    .images { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 20px 0; }
+    .images img {
+      flex: 1 1 300px; max-width: 45%; height: auto;
+      aspect-ratio: 4/3; object-fit: cover;
+      border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    }
+
+    /* Price box */
+    .price-box {
+      background: #f0f7ff;
+      border-left: 4px solid #003366;
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 20px 0;
+      font-size: 1.1rem;
+    }
+
+    /* Highlight box */
+    .highlight-box {
+      background: #fff8e1;
+      border-left: 4px solid #f0a500;
+      padding: 14px 20px;
+      border-radius: 4px;
+      margin: 20px 0;
+      font-size: 1rem;
+      font-style: italic;
+    }
+
+    /* FAQ */
+    .faq-section { margin-top: 40px; border-top: 2px solid #eee; padding-top: 20px; }
+    .faq-item { margin-bottom: 28px; }
+    .faq-item h3 { color: #003366; margin-bottom: 6px; font-size: 1.1rem; }
+    .faq-item p { margin: 0; }
+
+    /* Contact - centered */
+    .contact-section {
+      margin-top: 40px;
+      border-top: 2px solid #eee;
+      padding-top: 20px;
+      text-align: center;
+    }
+    .contact-section p { margin: 8px 0; }
+    .contact-section a { color: #003366; }
+
+    .contact-btn {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      justify-content: center;
+      gap: 8px;
+      background: #25D366;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-top: 12px;
+      transition: background 0.2s, transform 0.2s;
     }
+    .contact-btn:hover { background: #1ebe57; transform: scale(1.02); }
 
-    /* WhatsApp Icon Styling Module */
-    .whatsapp-icon {
-      vertical-align: middle;
-      margin-right: 6px;
-      fill: #25D366;
-      width: 20px;
-      height: 20px;
+    /* Reviews row */
+    .reviews-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      padding: 14px 20px;
+      background: #f0f7ff;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .reviews-row a { color: #003366; font-weight: bold; text-decoration: underline; font-size: 0.95rem; }
+    .reviews-row a:hover { color: #0055a5; }
+
+    /* Share */
+    .share-section { text-align: center; padding: 40px 20px; background: #f9f9f9; }
+    .share-section h2 { color: #003366; border: none; }
+    .share-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 16px; }
+    .share-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: white; padding: 10px 18px; border-radius: 6px;
+      text-decoration: none; font-weight: 600; font-size: 0.95rem;
+    }
+    .share-btn.facebook { background: #1877F2; }
+    .share-btn.whatsapp { background: #25D366; }
+    .share-btn:hover { opacity: 0.88; }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      background: #eee;
+      color: #555;
+      font-size: 0.9rem;
+    }
+    footer a { color: #003366; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    .whatsapp-svg { width: 20px; height: 20px; fill: white; flex-shrink: 0; }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      header { padding: 60px 20px 50px; }
+      header h1 { font-size: 1.4rem; }
+      .container { margin: 12px; padding: 20px 16px; }
+      .lang-switcher a, .lang-switcher span { padding: 5px 8px; font-size: 0.8rem; }
+      .images img { max-width: 100%; }
     }
   </style>
-
-    <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Help Me Move CH",
-    "url": "https://www.helpmemove.ch/"
-  }
-  </script>
-  
 </head>
 <body>
 
-  <!-- Header Module -->
+  <!-- Header -->
   <header>
-    <!-- Language Switcher -->
     <div class="lang-switcher">
-      <span class="active">🇬🇧 English</span>
-      <a href="de.html">🇩🇪 Deutsch</a>
+      <span class="active">&#127468;&#127463; English</span>
+      <a href="de.html">&#127465;&#127466; Deutsch</a>
     </div>
-    <h1>🚙 Transport Services for Expats in Zurich & Surroundings</h1>
-    <p>Reliable, affordable, and always on time.</p>
+    <h1>Affordable Moving Help &amp; Transport in Zurich</h1>
+    <p>Personal &middot; Reliable &middot; Pet-Friendly &middot; English-Speaking</p>
   </header>
 
-  <!-- Main Content Container -->
+  <!-- Main Content -->
   <div class="container">
 
-    <!-- Offer Description Module -->
-    <h2>What I Offer in Zurich & Surrounding Areas</h2>
-    <p>Hi! I'm offering a simple, personal solution for moving your stuff from point A to point B — without the stress. I drive a spacious SUV that fits a surprisingly decent volume. Yes — <strong>even a bed or sofa can be moved by car!</strong></p>
-    <p>Whether you’re moving a few boxes, relocating with your dog or cat, or transporting furniture across Zurich or Aarau — I offer a simple solution with a spacious SUV. As an expat myself, I understand how important it is to have affordable, pet-friendly, and stress-free moving help.</p>
+    <h2>Personal Moving Help in Zurich &amp; Aargau</h2>
+    <p>Need a moving company in Zurich but hate the idea of a 300 CHF minimum and three strangers in your flat? I get it. I offer a simple, personal moving service with a spacious SUV &mdash; <strong>boxes, furniture, even a sofa or a bed!</strong></p>
+    <p>As an expat myself, I know how stressful it can be to move in a new country. No agency overhead, no dispatchers &mdash; you deal directly with me. I speak English, I show up on time, and your pets are always welcome.</p>
 
-    <p>No fuss about stairs, elevators, or parking - I won’t charge extra for any of that. I just show up, help out, get the job done - and you’ll be in great company.</p>
-
-    <p><strong>Vehicle cargo dimensions:</strong><br>
-       Length: 190 cm &nbsp;&nbsp; Width: 110 cm &nbsp;&nbsp; Height: 80 cm</p>
-
-    <!-- Vehicle Images Module -->
-    <p>Here’s a look at the car:</p>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-      <img src="SUV_ext.webp"
-           alt="Spacious SUV for moving in Zurich with pets or furniture"
-           style="flex: 1 1 300px; max-width: 45%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; object-position: top center; border-radius: 10px;" />
-
-      <img src="SUV_int.webp"
-           alt="Inside of the car to get a better idea of space"
-           style="flex: 1 1 300px; max-width: 45%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px;" />
+    <div class="highlight-box">
+      No fuss about stairs, elevators, or parking &mdash; I won&rsquo;t charge extra for any of that. I just show up, help out, get the job done &mdash; and you&rsquo;ll be in great company.
     </div>
 
-    <!-- Pricing Module -->
-    <h2>Pricing for Moving in Zurich & Surrounding Area</h2>
-    <p>Simple pricing: <strong>100 CHF per hour</strong>. That’s it — no hidden fees. Parking and fuel? That’s on me.</p>
+    <p>Help Me Move is a personal moving service based in Zurich, offering affordable moving help across Kanton Z&uuml;rich and Aargau. Whether you need a moving company for a full apartment relocation, furniture transport, bed moving, sofa transport, personal transport, or just a few boxes &mdash; this is a flexible, English-speaking alternative to big moving companies in Zurich. Need a safe ride to the vet for your pet? That&rsquo;s covered too. No surprises, ever.</p>
 
-    <!-- Availability Module -->
-    <h2>Working Hours for Flexible Moving Help</h2>
-    <p>I am usually available after working hours — starting from 17:00, and I might also be available on weekends.</p>
+    <p><strong>Vehicle cargo dimensions:</strong> 190 cm (L) &times; 110 cm (W) &times; 80 cm (H)</p>
 
-    <!-- Contact Details Module -->
-    <h2>Contact Me for Transport and Help in Zurich</h2>
+    <div class="images">
+      <img src="SUV_ext.webp" alt="Spacious SUV used for moving in Zurich - exterior view" />
+      <img src="SUV_int.webp" alt="Interior cargo space of the SUV showing capacity for furniture and boxes" />
+    </div>
 
-    <!-- Phone & WhatsApp Module -->
-    <p style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-      <span>
-        📞 Phone: 
-        <a href="tel:%2B41%2078%20242%2012%2011">&#43;41 78 242 12 11</a>
-      </span>
+    <!-- Pricing -->
+    <h2>Transparent Pricing</h2>
+    <div class="price-box">
+      &#128176; <strong>100 CHF per hour</strong> &mdash; all-inclusive. No hidden fees for stairs, fuel, or parking.
+    </div>
+    <p>You only pay for the time used. Most moves take up to 3 hours. Contact me for a quick estimate based on your situation.</p>
 
-      <a href="https://wa.me/41782421211" 
-         target="_blank" rel="noopener" class="contact-link" aria-label="WhatsApp contact"
-         style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none; color: #25D366;">
-        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="#25D366" aria-hidden="true" focusable="false">
+    <!-- Availability -->
+    <h2>Availability</h2>
+    <p>I am available <strong>weekdays from 17:00</strong> and occasionally on certain weekends. Get in touch to check availability for your date.</p>
+
+    <!-- FAQ -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <h3>How much does a moving company cost in Zurich?</h3>
+        <p>Big moving companies in Zurich typically charge 150&ndash;300 CHF per hour with minimums of 3&ndash;4 hours. Here the rate is a flat <strong>100 CHF per hour</strong> &mdash; no minimums, no extra charges for stairs, fuel, or parking.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>What areas does your moving service cover?</h3>
+        <p>I cover <strong>Zurich city, the greater Zurich area (Kanton Z&uuml;rich), and Aargau including Aarau</strong> &mdash; roughly a 40 km radius from central Zurich. This includes Winterthur, Baden, Dietikon, Schlieren, Opfikon, Regensdorf, Adliswil, Thalwil, and W&auml;denswil. You can <a href="https://www.google.com/maps/place/Help+Me+Move+-+Personal+Moving+%26+Furniture+Transport/@47.3241595,8.5221226,10.19z/data=!4m6!3m5!1s0x4a479a26fe7039bf:0x1b8fb792780fcba2!8m2!3d47.321276!4d8.5285466!16s%2Fg%2F11ytts7mn9?hl=en" target="_blank" rel="noopener" style="color:#003366; font-weight:bold;">see the service area on Google Maps</a>. Moves to other cantons may be possible depending on the situation &mdash; feel free to ask.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can you move a sofa or a bed?</h3>
+        <p>Yes! The SUV cargo space is 190 cm long, 110 cm wide, and 80 cm high &mdash; fits most sofas, single and double beds, wardrobes, and large boxes. <strong>Tip:</strong> Many modern mattresses can be folded in half, which saves a lot of space. For bed frames, disassembling them beforehand (legs off, slats bundled) means everything fits more efficiently and fewer trips are needed.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Is the service pet-friendly?</h3>
+        <p>Absolutely. Dogs and cats are welcome to travel in the vehicle during the move at <strong>no extra cost</strong>.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you help with pet transport to the vet?</h3>
+        <p>Yes &mdash; if you need a calm, pet-friendly ride to a veterinary clinic in Zurich or Aargau, I can help with that too. Your pet travels safely and comfortably, without the stress of public transport.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you speak English?</h3>
+        <p>Yes &mdash; fully fluent in English. As an expat myself, I understand the challenges of settling in Switzerland and offer a relaxed, English-speaking experience.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you help with IKEA pickups, Ricardo, or Facebook Marketplace collections?</h3>
+        <p>Yes! I regularly help with IKEA pickups, as well as collecting items bought on Ricardo, Facebook Marketplace, or other second-hand platforms &mdash; and getting them safely to your place across Zurich and Aargau.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you help with loading and unloading?</h3>
+        <p>Yes, I assist with loading and unloading. For heavier items, having an extra pair of hands on your side is always a good idea. No extra charge for stairs or elevators.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can you move between cantons, e.g. from Zurich to another region?</h3>
+        <p>Possibly &mdash; it depends on distance, timing, and availability. Get in touch and we can discuss what works.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I ride along during the move?</h3>
+        <p>Yes, you are welcome to ride along. It&rsquo;s your move &mdash; I&rsquo;m just here to make it easier.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How far in advance do I need to book?</h3>
+        <p>As early as possible is always better, but last-minute requests are welcome too. Just WhatsApp, email, or give me a call.</p>
+      </div>
+
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-section">
+      <h2>Contact Me</h2>
+      <p>&#128222; <a href="tel:+41782421211">+41 78 242 12 11</a></p>
+      <p>&#128231; <a href="mailto:helpmemovech@gmail.com">helpmemovech@gmail.com</a></p>
+
+      <a href="https://wa.me/41782421211" class="contact-btn" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
+        <svg class="whatsapp-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M20.52 3.48A11.805 11.805 0 0012 0C5.373 0 0 5.373 0 12a11.98 11.98 0 001.639 6.012L0 24l6.11-1.589A11.976 11.976 0 0012 24c6.627 0 12-5.373 12-12a11.805 11.805 0 00-3.48-8.52zM12 21.529a9.514 9.514 0 01-4.879-1.404l-.349-.21-3.628.943.968-3.544-.227-.36A9.536 9.536 0 012.474 12c0-5.227 4.243-9.47 9.47-9.47 2.532 0 4.914.987 6.703 2.776a9.452 9.452 0 012.796 6.694c0 5.227-4.243 9.47-9.469 9.47zm5.204-7.148c-.286-.144-1.69-.83-1.95-.924-.26-.094-.45-.144-.64.144s-.734.924-.9 1.112c-.166.187-.33.21-.616.07-.286-.144-1.2-.442-2.28-1.4-.842-.75-1.41-1.67-1.574-1.956-.166-.286-.018-.44.126-.584.13-.13.286-.33.43-.495.144-.165.19-.286.286-.476.095-.19.05-.357-.025-.5-.074-.144-.64-1.54-.876-2.11-.23-.553-.466-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.357s-1 .974-1 2.37c0 1.397 1.028 2.75 1.173 2.945.144.19 2.028 3.1 4.91 4.342.686.296 1.22.472 1.637.604.686.22 1.31.19 1.8.115.55-.084 1.69-.69 1.928-1.36.238-.67.238-1.247.166-1.37-.07-.118-.26-.19-.545-.333z"/>
         </svg>
-        WhatsApp
+        Message me on WhatsApp
       </a>
-    </p>
 
-    <!-- Email Contact Module -->
-    <p>📧 Email:
-      <a href='ma&#105;lto&#58;%&#54;8e&#108;&#112;me&#109;ove%63h&#64;g%6D%61il&#46;com'>
-        helpmemovech&#64;gma&#105;l&#46;co&#109;
-      </a>
-    </p>
+      <div class="reviews-row">
+        <a href="https://share.google/HwJ97dqG2Jmu7bA5g" target="_blank" rel="noopener">See my Google Reviews</a>
+        <span style="color:#bbb;">&middot;</span>
+        <a href="https://g.page/r/CaLLD3iSt48bEBM/review" target="_blank" rel="noopener">Leave a Review</a>
+      </div>
+    </div>
 
   </div>
-  
-<!-- Share Section -->
-<section style="text-align: center; padding: 40px 20px;">
-  <h2 style="font-size: 1.6rem; margin-bottom: 20px;">Share this with someone</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
 
-    <!-- Facebook Share -->
-    <a href="https://www.facebook.com/sharer/sharer.php?u=https://helpmemove.ch"
-       target="_blank" rel="noopener" 
-       style="display: inline-flex; align-items: center; gap: 8px; background-color: #1877F2; color: white; border: none; border-radius: 6px; padding: 10px 16px; text-decoration: none; font-weight: 600;">
-      <i class="fab fa-facebook-f" style="font-size: 16px;"></i> Facebook
-    </a>
-
-    <!-- WhatsApp Share -->
-    <a href="https://wa.me/?text=Check%20this%20out:%20https://helpmemove.ch"
-       target="_blank" rel="noopener"
-       style="display: inline-flex; align-items: center; gap: 8px; background-color: #25D366; color: white; border: none; border-radius: 6px; padding: 10px 16px; text-decoration: none; font-weight: 600;">
-      <i class="fab fa-whatsapp" style="font-size: 16px;"></i> WhatsApp
-    </a>
-
+  <!-- Share Section -->
+  <div class="share-section">
+    <h2>Know someone who needs help moving?</h2>
+    <p>Share this page with friends, colleagues, or your expat community.</p>
+    <div class="share-buttons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.helpmemove.ch"
+         target="_blank" rel="noopener" class="share-btn facebook">
+        &#128216; Share on Facebook
+      </a>
+      <a href="https://wa.me/?text=Need%20moving%20help%20in%20Zurich%3F%20Check%20this%20out%3A%20https%3A%2F%2Fwww.helpmemove.ch"
+         target="_blank" rel="noopener" class="share-btn whatsapp">
+        &#128172; Share on WhatsApp
+      </a>
+    </div>
   </div>
-</section>
 
-<!-- Font Awesome for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Footer Module -->
+  <!-- Footer -->
   <footer>
-    &copy; Created actually by ME
+    <p>&copy; 2026 Help Me Move Zurich &nbsp;&middot;&nbsp; Serving Zurich, Aargau &amp; surrounding areas &nbsp;&middot;&nbsp; <a href="tel:+41782421211">+41 78 242 12 11</a></p>
   </footer>
 
 </body>
